@@ -31,11 +31,11 @@
 //     return acc
 // })
 // console.log(res);
-let data = ["vikas","hii","vi"];
-let res = data.filter((e)=>{
-    
-})//
-
+// let data = ["vikas","hii","vi"];
+// let res = data.filter((e)=>{
+//     return e ==="vikas"
+// })//
+// console.log(res);
 
 
 
