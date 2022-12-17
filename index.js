@@ -37,6 +37,32 @@
 // })//
 // console.log(res);
 
+// let a = 20;
+// let b = 100;
+// a=b
+// b=a/b
+// b=a-b
+// console.log(a);
+// console.log(b);
+// 100/100*100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
