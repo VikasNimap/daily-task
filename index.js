@@ -45,6 +45,29 @@
 // console.log(a);
 // console.log(b);
 // 100/100*100
+// let data = [23,45,67,89];
+// let position = 1;
+// let element = 100;
+// for(let i=data.length-1;i>=1;i--){
+//     if(i>=position){
+//         data[i+1]=data[i]
+//     }
+//     if(i==position){
+//         data[i] = element
+//     }
+// }
+// console.log(data);
+
+
+// let a = 1234;
+// while(a>0){
+//    let r=a%10
+//    console.log(r);
+//    a=Math.floor(a/10)
+// }
+// console.log(res);
+// console.log(a);
+
 
 
 
