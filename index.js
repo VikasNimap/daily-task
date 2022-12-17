@@ -33,8 +33,8 @@
 // console.log(res);
 let data = ["vikas","hii","vi"];
 let res = data.filter((e)=>{
-    
-})
+
+})//
 
 
 
