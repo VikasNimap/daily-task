@@ -68,6 +68,70 @@
 // console.log(res);
 // console.log(a);
 
+// let a = 2345;
+// let str = ''
+// while(a>0){
+//     let res = a%10
+//     str += res
+//     // console.log(res);
+//     a = Math.floor(a/10);
+//     // console.log(a);
+// }
+// console.log(Number(str));
+
+// let arr = [2,34,5,6];
+// let position = 1;
+// for(let i = position;i<arr.length;i++){
+//         arr[i]=arr[i+1]
+// }
+// arr.length = arr.length-1
+// console.log(arr);
+
+// let str = "VIKASSAKI";
+// function check(){
+// for(let i = 0;i<str.length;i++){
+//     if(str[i]!=str[str.length-i-1]){
+//         return "it is not";
+//     }
+// }
+// return "palimdrome"
+// }
+
+// console.log(check());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
