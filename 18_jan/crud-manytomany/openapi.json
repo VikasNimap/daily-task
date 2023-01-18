@@ -1,0 +1,29 @@
+{
+  "paths": {
+    "/courses": {
+      "post": {
+        "tags": [
+          "courses"
+        ],
+        "summary": "Update an existing pet",
+        "description": "Update an existing pet by Id",
+        "operationId": "updatePet",
+        "requestBody": {
+          "description": "Update an existent pet in the store",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pet"
+              },
+              "api_key": {
+                "type": "apiKey",
+                "name": "api_key",
+                "in": "header"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
