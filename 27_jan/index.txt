@@ -1,0 +1,120 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+console.log("Welcome to Programiz!");
+// const users = "The user is vikas. "
+// let trim = users.trim();
+// console.log(trim)
+// var a = 100;
+// function p(){
+//     var a  =10;
+//     console.log(a)
+// }
+// p()
+// console.log(a)
+// let dat  = [20,34,5,1,10];
+// for(let i = 0;i<dat.length;i++){
+//     if(dat[i]%2){
+//         console.log(dat[i])
+//     }
+//     else{
+//         console.log(`no mathc`)
+//     }
+// }
+
+// let str1 = "vikas";
+// let str2 = "sakiv";
+// let s1 = str1.split('').sort();
+// let s2 = str2.split('').sort();
+// let s = s1.join('').toUpperCase();
+// let ss = s2.join('').toUpperCase();
+// if(s==ss){
+//     console.log(`ANAGRAM`);
+// }
+// else{
+    
+// console.log(`NOT ANAGRAM`);
+// }
+
+// let str = "a";
+// let res = "";
+// for(let i = str.length-1;i>=0;i--){
+//     res += str[i]
+// }
+// if(str===res){
+//     return console.log(`palindrome`)
+// }
+// else{
+//     return console.log(`not palindrome`)
+// }
+
+// let first = 0;
+// let second = 1;
+// let arr = [];
+// arr.push(first);
+// arr.push(second);
+// for(let i = 0;i<=10-2;i++){
+// let next = first + second
+// first = second
+// second = next
+// arr.push(next);
+// }
+// console.log(arr);
+// let firstNum = 0;
+// let secondNum = 1;
+// let arr = [];
+// arr.push(firstNum);
+// arr.push(secondNum);
+// for(let i = 0;i<=10-2;i++){
+//     let nextTerm = firstNum + secondNum
+//     arr.push(nextTerm)
+//     firstNum = secondNum
+//     secondNum = nextTerm
+// }
+// console.log(arr);
+
+// let n = 50;
+// let arr = [];
+// let count = 0;
+// for(let i = 0;i<=n;i++){
+//     count = 0
+//     for(let j = 1;j<i;j++){
+//         if(i%j==0){
+//           count++  
+//         }
+//     }
+//     if(count==1){
+//         arr.push(i)
+//     }
+// }
+// console.log(arr);
+let num = 25;
+let output = num/
+console.log(output);
+
+
+// let num = 121;
+// for(let i = 0;i<=num;i++){
+//     if(i*i==num){
+//         console.log(`the number is ${i}`)
+//         break
+//     }
+// }
+// let data = [80, 60, 10, 50, 30, 100, 0, 50,20];
+// for(let i = 0;i<data.length;i++){
+//     for(let j = 0;j<=i;j++){
+//         if(data[i] + data[j] === 100){
+//             console.log(data[i] + " & " + data[j])
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
