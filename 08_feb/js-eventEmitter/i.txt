@@ -1,0 +1,1 @@
+{"name":"Vikash Maurya","age":20,"gender":"Male","tech":"NodeJs","exp":0.2}
