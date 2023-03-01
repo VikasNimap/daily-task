@@ -154,6 +154,12 @@
 //         }
 //     }
 // }
+// duplicate 
+// let data = [12,34,56,12,34];
+// let filter = data.filter((e,index,data)=>{
+//       return data.indexOf(e)!==index
+// })
+// console.log(filter);
 
 // 14) pairs whose sum = 100
 // let data = [80, 60, 10, 50, 30, 100, 0, 50];
