@@ -166,26 +166,72 @@
 // }
 
 // 15) linked list question
-class List{
-    constructor(data){
-        this.head = {
-            value: data,
-            next: null
-        }
-        this.tail = this.head
-        this.size = 1
-    }
-    appendNode(nodeData){
-        let newNode = {
-            value:nodeData,
-            next: null
-        }
-        this.tail.next = newNode;
-        this.tail = newNode
-        this.size += 1
-    }
-}
-let list = new List(200)
-list.appendNode(300)
-list.appendNode(400)
-console.log(list);
+// class List {
+//     constructor(data, next) {
+//         this.data = data,
+//             this.next = null
+//     }
+// }
+
+// class LinkedList {
+//     constructor(data, next) {
+//         this.head = null,
+//             this.tail = null
+//     }
+//     insertAtBeginning(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list,
+//                 this.tail = list
+//         }
+//         else {
+//             list.next = this.head,
+//                 this.head = list
+//         }
+//     }
+//     insertAtEnd(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list;
+//             this.tail = list
+//         }
+//         else {
+//             this.tail.next = list
+//             this.tail = list
+//         }
+//     }
+//     print(data) {
+//         for (let i = this.head; i != null; i = i.next) {
+//             console.log(i.data);
+//         }
+//     }
+// }
+
+// const node = new LinkedList();
+// node.insertAtBeginning(4);
+// node.insertAtEnd(5);
+// node.insertAtEnd(6);
+// node.insertAtEnd(7);
+// node.insertAtEnd(8);
+// node.insertAtEnd(9);
+
+// node.print();
+// console.log("___________________________________________________________________")
+// const node2 = new LinkedList();
+// node2.insertAtBeginning(11);
+// node2.insertAtEnd(12);
+// node2.insertAtEnd(13);
+// node2.insertAtBeginning(9);
+// node2.insertAtBeginning(8);
+// node2.insertAtBeginning(7);
+// node2.insertAtBeginning(6);
+
+// node2.print();
+
+// for(let i=node.head;i!=null;i=i.next){
+//     for(let j=node2.head;j!=null;j=j.next){
+//     if(i.data==j.data) console.log(i.data);
+//     }
+// }
