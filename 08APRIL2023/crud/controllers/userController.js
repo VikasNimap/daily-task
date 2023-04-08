@@ -43,6 +43,13 @@ exports.login = async (req, res) => {
 
 exports.getUserById = async (req, res) => {
     const userId = req.params.id;
-    const response = await db.users.findOne({where:{id:userId}});
-    res.send({result:response})
+    const response = await db.users.findOne({ where: { id: userId } });
+    res.send({ result: response })
+}
+
+exports.updateUser = async (req, res) => {
+    const userId = req.params.id;
+    const data = req.body;
+    const response = await db.users.update(data, { where: { id: userId } });
+    res.send({ result: response })
 }

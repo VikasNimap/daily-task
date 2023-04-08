@@ -7,4 +7,5 @@ const middleWare = require('../middleware/checkAuth');
 router.get('/findAllUsers', middleWare.verify, middleWare.permission, controllers.getUser);
 router.post('/login', controllers.login);
 router.get('/findOneUser/:id', middleWare.verify, middleWare.permission, controllers.getUserById)
+router.put('/update-user/:id', middleWare.verify, middleWare.permission, controllers.updateUser);
 module.exports = router;
