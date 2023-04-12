@@ -87,3 +87,50 @@
 // }
 
 
+// test(function xyz() {
+//     console.log("qwerty");
+// })
+// let test = (xyz) => {
+//     console.log("vikas");
+// }
+
+// xyz()
+
+
+// let data = [NaN,12];
+// console.log(...data);
+
+// try {
+//     console.log(e, 3,);
+// }
+// catch (err) {
+//     console.log(err);
+// }
+
+// throw new Error(e).toString();
+
+// try {
+//     console.log(new Error(p));
+// } catch (error) {
+//     console.log(error);
+// }
+
+
+//  name = "vikas";
+
+// console.log(this);
+
+// return 1
+// console.log("return");
+
+
+// function test() {
+//     console.log("vikas");
+// }
+// test(function y() {
+//     console.log("y called");
+// })
+
+// test()
+
+
