@@ -1,16 +1,14 @@
 const multer = require('multer');
 
 const fileFilter = (req, file, cb) => {
-    console.log("=======",file.mimetype);
     if (file.mimetype.split("/")[1] === "jpeg"||
     file.mimetype.split("/")[1] === "jpg"||
     file.mimetype.split("/")[1] === "png") {
       cb(null, true);
     } else {
-      cb(new Error("Not a PDF File!!"), false);
+      cb(new Error("Not a image File!!"), false);
     }
   };
-
 
 
 const multerStorage = multer.diskStorage({
@@ -19,7 +17,8 @@ const multerStorage = multer.diskStorage({
     },
     filename: (req, file, cb) => {
       const ext = file.mimetype.split("/")[1];
-      cb(null, `http://127.0.0.1:3000-${file.fieldname}-${Date.now()}.${ext}`);
+      cb(null, `${Date.now()}.${ext}`);
+      // console.log(file);
     },
   });
 
