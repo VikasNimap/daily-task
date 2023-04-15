@@ -32,7 +32,7 @@ router.post('/users/forgot-password',validation.verifyEmail,check.catch,wrapper(
 router.post('/users/verify-otp',validation.otp,check.catch,wrapper(controllers.verifyOtp));
 
 //update password
-router.put('/users/update-password/:id',validation.checkPasswd,check.catch,wrapper(controllers.resetPassword));
+router.put('/users/update-password/:id',validation.checkPasswd,check.catch,wrapper(controllers.resetPassword)); 
 
 
 
