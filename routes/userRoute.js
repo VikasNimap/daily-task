@@ -29,11 +29,12 @@ router.post('/users/login',validation.loginValidation,check.catch,wrapper(contro
 router.post('/users/forgot-password',validation.verifyEmail,check.catch,wrapper(controllers.forgotPassword));
 
 //verify otp
-router.post('/users/verify-otp',validation.otp,check.catch,wrapper(controllers.verifyOtp));
+router.post('/users/verify-otp/:id',validation.otp,check.catch,wrapper(controllers.verifyOtp));
 
 //update password
 router.put('/users/update-password/:id',validation.checkPasswd,check.catch,wrapper(controllers.resetPassword)); 
 
-
+//logout-user
+router.delete('/users/expire-session/:id',controllers.logOut);
 
 module.exports = router;

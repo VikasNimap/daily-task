@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   userToken.init({
-    UserId: DataTypes.INTEGER,
+    userId: DataTypes.INTEGER,
     token: DataTypes.STRING
   }, {
     sequelize,

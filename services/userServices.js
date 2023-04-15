@@ -98,7 +98,17 @@ exports.userLogin = async(email,password) => {
                     userId:find.id,
                     token:signature
                 }
-                const add = await db.userToken.create(user);
+                const token = await db.userToken.findOne({where:{userId:find.id}});
+                if(token){
+                    const user = {
+                            userId:find.id,
+                            token:signature
+                    }
+                    const updateToken = await db.userToken.update(user,{where:{userId:find.id}});
+                }
+                else{
+                    const add = await db.userToken.create(user);
+                }
                 return ({result:signature})
             }
             else{
@@ -141,6 +151,8 @@ exports.verifyOtp = async(id,otp) => {
 
 exports.resetUserPasswd = async (userId,password,confirmPassword) => {
     if(password===confirmPassword){
+        const salt = await bcrypt.genSalt(10);
+        password = await bcrypt.hash(password,salt);
         const response = await users.update({password:password},{where:{id:userId}});
         if(response){
             return ({result:response})
@@ -154,3 +166,18 @@ exports.resetUserPasswd = async (userId,password,confirmPassword) => {
     }
 }
 
+exports.user_logOut = async(userId,token) => {
+    const bearer = token.split(" ")[1];
+    if(bearer){
+        const deleteToken = await db.userToken.destroy({where:{userId:userId}});
+        if(deleteToken){
+            return ({result:deleteToken})
+        }
+        else{
+            return ({message:`could not delete token`})
+        }
+    }
+    else{
+        return ({message:`could not verify token`})
+    }
+}

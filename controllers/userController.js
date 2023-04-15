@@ -118,3 +118,9 @@ exports.resetPassword = async (req,res) => {
     }
 }
 
+exports.logOut = async (req,res) => {
+    const userId = req.params.id;
+    const token = req.header("Authorization");
+    const response = await services.user_logOut(userId,token);
+
+}
