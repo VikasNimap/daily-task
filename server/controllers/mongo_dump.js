@@ -4,7 +4,7 @@
 
 // var dbOptions = {
 //     user: 'Vikas8692',
-//     pass: '1234',
+//     pass: '',
 //     host: 'localhost',
 //     port: 27017,
 //     database: 'mahaBuzz',
@@ -52,7 +52,7 @@
 //             oldBackupDir = beforeDate.getFullYear() + '-' + (beforeDate.getMonth() + 1) + '-' + beforeDate.getDate();
 //             oldBackupPath = dbOptions.autoBackupPath + 'mongodump-' + oldBackupDir; // old backup(after keeping # of days)
 //         }
-//         var cmd = 'mongodump mongodb+srv://Vikas8692:<password>@cluster0.ixgyyhk.mongodb.net/?retryWrites=true&w=majority ' + dbOptions.host + ' --port ' + dbOptions.port + ' --db ' + dbOptions.database + ' --username ' + dbOptions.user + ' --password ' + dbOptions.pass + ' --out ' + newBackupPath; // Command for mongodb dump process
+//         var cmd = 'mong ' + dbOptions.host + ' --port ' + dbOptions.port + ' --db ' + dbOptions.database + ' --username ' + dbOptions.user + ' --password ' + dbOptions.pass + ' --out ' + newBackupPath; // Command for mongodb dump process
 
 //         exec(cmd, function (error, stdout, stderr) {
 //             if (this.empty(error)) {
