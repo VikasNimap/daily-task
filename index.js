@@ -138,3 +138,7 @@
 // let str = 'alliance is the option left for Aisa.';
 // console.log(reg.exec(str));
 
+// let reg = /vikas{2}/;
+// let str = 'vikas vikas and bye';
+// console.log(reg.exec(str));
+
