@@ -106,3 +106,20 @@
 //     }
 // }
 
+// console.log(a);
+// var a;
+// a = 10;
+
+// for(let i = 0;i<=10;i++){
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 3000);
+// }
+
+// for (var i = 0; i <= 10; ++i) {
+//     console.log(i);
+// }
+
+let a = 3;
+let b = "3";
+console.log(a-b);
