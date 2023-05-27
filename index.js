@@ -117,16 +117,58 @@
 //     secondNum = nextNum
 // }
 
-let num = 10;
-let count = 0;
-for (let i = 2; i <= num; i++) {
-    count = 0;
-    for (let j = 2; j <= num; j++) {
-        if (i % j == 0) {
-            count++
+// let num = 10;
+// let count = 0;
+// for (let i = 2; i <= num; i++) {
+//     count = 0;
+//     for (let j = 2; j <= num; j++) {
+//         if (i % j == 0) {
+//             count++
+//         }
+//     }
+//     if (count == 1) {
+//         console.log(i);
+//     }
+// }
+
+
+// let str = "Engineer";
+// function freq(str) {
+//     let data = {};
+//     for (let char of str) {
+//         if (data[char]) {
+//             data[char]++
+//         }
+//         else {
+//             data[char] = 1
+//         }
+//     }
+//     let res = '';
+//     for (let k in data) {
+//         res += k + data[k]
+//     }
+//     return res
+// }
+// console.log(freq(str));
+
+// let a = fetch
+
+const getData = async () => {
+    let temp = []
+    const findData = await fetch('https://catfact.ninja/fact');
+    console.log(findData);
+    if (findData && findData.length) {
+        for (let i of findData) {
+            let resp = await fetch(`/v1/by-id/${i}`);
+            if (resp) {
+                temp.push(resp)
+            } else {
+                temp.push(null)
+            }
         }
+    } else {
+        return `Error`
     }
-    if (count == 1) {
-        console.log(i);
-    }
+    res.send(temp)
 }
+getData();
