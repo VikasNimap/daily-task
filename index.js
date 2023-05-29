@@ -55,3 +55,39 @@
 // let res = arr.slice(2);
 // console.log(res);
 // console.log(arr);
+
+class List {
+    constructor(data, next) {
+        this.data = data,
+            this.next = null
+    }
+}
+
+class LinkedList {
+    constructor(data, next) {
+        this.head = null,
+            this.tail = null
+    }
+    insertAtBeginning(data) {
+        const list = new list();
+        list.data = data;
+        if (!this.head) {
+            this.head = list,
+                this.tail = list
+        } else {
+            list.next = this.head,
+                this.head = list
+        }
+    }
+    insertAtEnd(data) {
+        const list = new list();
+        list.data = data;
+        if (!this.head) {
+            this.head = list,
+                this.tail = list
+        } else {
+            this.tail.next = list,
+                this.tail = list
+        }
+    }
+}
