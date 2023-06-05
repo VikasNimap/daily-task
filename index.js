@@ -39,16 +39,73 @@
 //     firstNum = secondNum
 //     secondNum = nextNum
 // }
-var num = 15;
-var count = 0;
-for (var i = 2; i <= num; i++) {
-    count = 0;
-    for (var j = 2; j <= num; j++) {
-        if (i % j == 0) {
-            count++;
-        }
-    }
-    if (count == 1) {
-        console.log(i);
-    }
+// let num: number = 15;
+// let count: number = 0;
+// for (let i = 2; i <= num; i++) {
+//     count = 0
+//     for (let j = 2; j <= num; j++) {
+//         if (i % j == 0) {
+//             count++
+//         }
+//     }
+//     if (count == 1) {
+//         console.log(i);
+//     }
+// }
+// let a = '{}';
+// if ('{' && '}') {
+//     console.log();
+// }
+// setTimeout(() => {
+//     // return ( ("12345"));
+//     try {
+//     } catch (error) {
+//         throw Error("inside settimeout error")
+//     }
+// }, 1000);
+// async function test(x) {
+//     console.log("hello");
+//      x()
+// }
+// test(function x() {
+//     console.log("12345");
+// })
+// function greet() {
+//     console.log("hello...,");
+// }
+// setTimeout(greet, 2000);
+// setTimeout(() => {
+// }, 2445);\
+// function greet() {
+//     console.log("hello...,");
+// }
+// // let greet = "vikas"
+// setTimeout(greet, 2000);
+// function test() {
+//     var a = b = 1;
+// }
+// test()
+// console.log(b);
+// setTimeout(() => {
+//     1
+// }, 200);
+// async function test() {
+//     return new Promise((resolve,reject)=>{
+//         reject(1)
+//     }).then((data)=>{
+//         console.log(data);
+//     }).catch((err)=>{
+//         console.log(err);
+//     })
+//     console.log(12457890);
+// }
+// test()
+var data = {
+    name: "vikas",
+    email: ["vikas@gmail.com"],
+    phone: "1234567890"
+};
+// console.log(data.email.length);
+for (var i = 0; i < data.email.length; i++) {
+    console.log(Object.keys(data.email[0]));
 }
