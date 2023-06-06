@@ -84,4 +84,77 @@
 // }
 // console.log(arr);
 
+// let a
+// let b = a(() => {
+//     console.log('inside iffee');
+// })()
+
+// let a = 10;
+// let b = a
+//     (() => {
+//         console.log(a, 'inside ');
+//     })()
+// console.log(b, 'outside');
+
+// console.log(1);
+// function test() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res(2)
+//         }, 2000);
+//     })
+// }
+// async function temp() {
+//     let a = await test()
+//     console.log(a);
+//     console.log(3);
+// }
+// temp()
+
+// function fact(num) {
+//     if (num <= 0) {
+//         return 1
+//     }
+//     return num * fact(num - 1)
+// }
+
+// console.log(fact(6));
+
+// function rec(num){
+//     if(num<=1){
+//         // return rec()
+//     }
+//     return num * rec(num-1)
+// }
+// console.log(rec(4));
+// let res = 1;
+// for(let i = 1;i<=6;i++){
+//     res*=i
+// }
+// console.log(res);
+
+// let data = [12, 34, 567, 8, 9];
+// let a = data.map((e) => {
+//     console.log(e);
+// })
+
+// data.forEach((e) => {
+//     console.log(e);
+// })
+
+// const arr = [1,2,3,4,5,"vikas"]
+// const l = arr.length
+
+// for(let i = 0; i < l / 2; i++){
+//     [arr[i], arr[l - i - 1]] = [arr[l - i - 1], arr[i]]
+// }
+// //[1,4]=[4,1]
+// //[2,3]=[3,2]
+// //[3,2]=[2,3]
+
+
+// console.log(arr)
+
+
+
 
