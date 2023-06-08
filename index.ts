@@ -205,39 +205,141 @@
 // console.log(teacher.fullName);
 
 
-class Account {
-    readonly id: number;
-    owner: string;
-    private _balance: number;
-    nickname?: string;
+// class Account {
+//     // // readonly id: number;
+//     // // owner: string;
+//     // // private _balance: number;
+//     // nickname?: string;
 
-    constructor(id: number, owner: string, balance: number) {
-        this.id = id;
-        this.owner = owner;
-        this._balance = balance;
+//     constructor(
+//         public readonly id: number,
+//         public owner: string,
+//         private _balance: number,
+//         public nickname?: string) {
+//         // this.id = id;
+//         // this.owner = owner;
+//         // this._balance = balance;
 
-    }
-    deposit(amount: number): void {
-        if (amount <= 0) {
-            throw new Error('Invalid amount')
-        } else {
-            this._balance += amount
-        }
-    }
+//     }
+//     deposit(amount: number): void {
+//         if (amount <= 0) {
+//             throw new Error('Invalid amount')
+//         } else {
+//             this._balance += amount
+//         }
+//     }
 
-    calculateTax(): number {
-        return this._balance * 2.5
-    }
+//     calculateTax(): number {
+//         return this._balance * 2.5
+//     }
 
-    getBalance(): number {
-        return this._balance;
-    }
+//     getBalance(): number {
+//         return this._balance;
+//     }
+// }
+
+// let account = new Account(123, 'Vikas Maurya', 500);
+
+// account.deposit(2000);
+
+
+// console.log(account.getBalance());
+// console.log(account.calculateTax());
+
+// let newAccount = new Account(12,'vik',3493430);
+// console.log(newAccount.getBalance())
+
+
+
+
+// class Account {
+//     constructor(
+//         public readonly id: number,
+//         public owner: string,
+//         private _balance: number,
+//         public nickname?: string) {
+//     }
+//     deposit(amount: number): void {
+//         if (amount <= 0) {
+//             throw new Error('Invalid amount')
+//         } else {
+//             this._balance += amount
+//         }
+//     }
+//     calculateTax(): number {
+//         return this._balance * 2.5
+//     }
+//     get balance(): number {
+//         return this._balance;
+//     }
+//     set balance(value: number) {
+//         if (value < 0) {
+//             throw new Error('Invalid value')
+//         } else {
+//             this._balance = value
+//         }
+//     }
+// }
+
+// let newAccount = new Account(12, 'vik', 102);
+// console.log(newAccount.balance)
+// console.log(newAccount.balance=234);
+// console.log(newAccount.balance);
+
+
+// let data = {};
+// data.name = 'vikas'
+
+// class seatAssignment {
+//     // Index signature property
+//     [seatNumber: string]: string | number
+// }
+
+// let seat = new seatAssignment();
+// seat.A1 = 'vikas';
+// seat.B1 = 'major';
+// seat.C1 = 'satendra';
+// seat.D1 = 'mali';
+// seat.E1 = 123456;
+
+// console.log(seat);
+
+// class Account {
+//     constructor(public readonly id: number, public owner: string) {
+// console.log('hoo');
+
+//     }
+// }
+// console.log(Account.caller);
+
+// let a = '1234567890';
+// let b = Array.from(a);
+// console.log(b);
+
+
+
+// console.log( console.log(j))
+
+// class seatNumber {
+//     [index: string]: string
+// }
+
+// let seat = new seatNumber();
+// seat.s1 = 'vihal'
+// console.log(seat);
+
+class Ride {
+    static activeRides: number = 0;
+    start() { Ride.activeRides++ }
+    stop() { Ride.activeRides-- }
 }
 
-let account = new Account(123, 'Vikas Maurya', 500);
+let ride = new Ride();
+ride.start()
+ride.start()
+console.log(Ride.activeRides);
+ride.stop()
+ride.stop()
+console.log(Ride.activeRides);
 
-account.deposit(2000);
 
-
-console.log(account.getBalance());
-console.log(account.calculateTax());
