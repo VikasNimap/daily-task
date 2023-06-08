@@ -328,18 +328,62 @@
 // seat.s1 = 'vihal'
 // console.log(seat);
 
-class Ride {
-    static activeRides: number = 0;
-    start() { Ride.activeRides++ }
-    stop() { Ride.activeRides-- }
+// class Ride {
+//     static activeRides: number = 0;
+//     start() { Ride.activeRides++ }
+//     stop() { Ride.activeRides-- }
+// }
+
+// let ride = new Ride();
+// ride.start()
+// ride.start()
+// console.log(Ride.activeRides);
+// ride.stop()
+// ride.stop()
+// console.log(Ride.activeRides);
+
+
+// class Ride {
+//     private _activeRides: number = 0
+//     start() {
+//         this._activeRides++
+//     }
+//     stop() {
+//         this._activeRides--
+//     }
+//     getRides(): number {
+//         return this._activeRides
+//     }
+// }
+
+// let ride = new Ride();
+// ride.start()
+// ride.start();
+// console.log(ride.getRides());
+
+
+class Person {
+    constructor(public firstName: string, public lastName: string) {
+    }
+    get fullName() {
+        return this.firstName + this.lastName
+    }
+    walk(): void {
+        console.log('walking');
+    }
+}
+// let person = new Person('vikas', 'maurya');
+// person.walk();
+
+class Student extends Person {
+    constructor(books: string, studentId: number, firstName: string, lastName: string) {
+        super(firstName, lastName)
+    }
+    takeTest() {
+        console.log('Taking a test.');
+
+    }
 }
 
-let ride = new Ride();
-ride.start()
-ride.start()
-console.log(Ride.activeRides);
-ride.stop()
-ride.stop()
-console.log(Ride.activeRides);
-
-
+let student = new Student('JavaScript',123,'Vikas','Maurya');
+student.takeTest()
