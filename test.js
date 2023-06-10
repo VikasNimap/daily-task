@@ -44,9 +44,25 @@
 // var seats = new SeatAssignment();
 // seats.s1 = 'Vikas Maurya';
 // console.log(seats.s1);
-if (!true) {
-    i = 10
-    console.log(i);
-} else {
-    console.log(i);
+// if (!true) {
+//     i = 10
+//     console.log(i);
+// } else {
+//     console.log(i);
+// }
+
+try {
+    try {
+
+        throw new Error('someting bad')
+
+    } catch (error) {
+        // return error
+        throw error
+
+        console.log(error, '234567-------------');
+    }
+} catch (error) {
+    console.log(error, '----++++++++++--------');
 }
+

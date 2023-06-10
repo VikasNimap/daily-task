@@ -45,9 +45,19 @@
 //     new Principal('ddfvf', 'sjdfd')
 // ])
 
-class SeatAssignment {
-    [seats: string]: string
-}
-let seats = new SeatAssignment();
-seats.s1 = 'Vikas Maurya'
-console.log(seats.s1);
+// class SeatAssignment {
+//     [seats: string]: string
+// }
+// let seats = new SeatAssignment();
+// seats.s1 = 'Vikas Maurya'
+// console.log(seats.s1);
+
+
+// let num = 123456;
+// let a = 
+
+// if (!true) {
+//     i = 10;
+//     console.log(i);
+
+// }
