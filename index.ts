@@ -161,3 +161,128 @@
 // });
 
 
+// function add(a: string | number, b: string | number) {
+//     if (typeof a === "number" && typeof b === "number") {
+//         return a + b
+//     } else {
+//         return a + ' ' + b
+//     }
+// }
+
+// console.log(add(12,34));
+
+
+// let a = 'hello';
+// a="string"
+
+// type person = { name: string, age: number, email: string }
+// let details: person = {
+//     name: "Vikas",
+//     age: 23,
+//     email: 'vikas@gmail.com'
+// }
+
+// console.warn(details.email.toUpperCase());
+
+// let person = {};
+// person.name = 'vikas';
+// person.age = 56;
+
+
+// function test(a: string, b: string): string {
+//     a.trim(), b.trim()
+//     let c = a + b
+//     return c.length.toString()
+// }
+// console.log(test('Vikas ', 'Maurya'));
+
+// type Role = [number, number, number, number, number, number];
+// type data = { name: string, age?: string, email: string, isActive?: boolean };
+// let role: data{} = ['vikas', '23', 'vikas@gmail.com', true];
+
+// type data = [name: string, age?: string, email?: string, isActive?: boolean]
+// let d1: data = ['vikas', '23 years', 'vikas@gmail.com', true];
+// d1.forEach((e) => {
+//     console.log(e);
+// })
+
+
+// let map = new Map();
+// map.set('name', 'Vikas');
+// map.set('email', 'vikas@gmail.com');
+// map.set('phone', '1234567890');
+// map.set('id', '123');
+// // console.log(map);
+// // console.log(map.get('name'));
+// console.log(map.get('name'));
+
+// let arr = [12,34,5,67,89,12];
+// let a = new Set(arr);
+// console.log(a);
+// console.log(arr);
+
+
+
+// let data = [{
+//     name: 'vikas'}, {name: 'ramehs'
+// }, { name: 'visha'
+// }, {name: '45tf'
+// }, {
+// name: '344'
+// }, {
+//     name: 'vikas'
+// }, {
+//     name: 'vikas'
+// }, {
+//     name: 'vikas'
+// }, {
+//     name: 'vikas'
+// }]
+
+// const uniqueAuthors = data.reduce((accumulator, current) => {
+//   if (!accumulator.find((item) => item.name=== current.name)) {
+//     accumulator.push(current);
+//   }
+//   return accumulator;
+// }, []);
+// console.log(uniqueAuthors)
+
+
+// let data = [{
+//     name: 'vikas'
+// }, {
+//     name: 'ramehs'
+// }, {
+//     name: 'vishal'
+// }, {
+//     name: '45tf'
+// }, {
+//     name: '344'
+// }, {
+//     name: 'Djanyo'
+// }, {
+//     name: '     '
+// }, {
+//     name: 'vikas'
+// }, {
+//     name: '45678'
+// }]
+
+// let unique = data.reduce((acc:any, curr:any) => {
+//     if (!acc.find((item) => item.name === curr.name)) {
+//         acc.push(curr)
+//     }
+//     return acc
+// }, [])
+
+// console.log(unique);
+
+// async function temp() {
+//     let test = await fetch('https://www.youtube.com/watch?v=OvexMCKAXks&list=PL8p2I9GklV44eT51JPju4LsTQlce6DPtx&index=10');
+//    console.log(test);
+   
+// }
+//  temp()
+
+
+
