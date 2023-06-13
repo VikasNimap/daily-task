@@ -6,7 +6,7 @@ import reminders from './router/reminders'
 
 db()
 app.use(express.json())
-app.use('/reminders', reminders)
+app.use('/api', reminders)
 
 app.get('/', ((req, res) => {
     res.send({ message: 'Hello World' })

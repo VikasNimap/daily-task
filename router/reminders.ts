@@ -7,7 +7,9 @@ interface User {
     email: string,
     password: string
 }
-router.post('/', controllers.default)
+router.post('/', controllers.createUser)
+router.get('/', controllers.getUser)
+router.put('/:id', controllers.updateUser);
 // router.get('/', ((req, res) => {
 //     res.send({ message: 'List of reminders.' })
 // }))
