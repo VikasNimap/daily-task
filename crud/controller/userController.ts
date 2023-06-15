@@ -1,8 +1,11 @@
 import { Request, Response } from "express"
-import { db } from '../models/index';
+import User from "../models/users";
+import bcrypt from 'bcrypt';
 const createUser = async (req: Request, res: Response) => {
-    const data: object = req.body;
-    const response: object = await db.users.create(data);
+    const salt = await bcrypt.genSalt(10);
+    const data = req.body;
+    data.password = await bcrypt.hash(data.password, salt);
+    const response: object = await User.create(data)
     if (!response) {
         res.status(400).json({ error: true })
     } else {

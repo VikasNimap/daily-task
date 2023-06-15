@@ -3,9 +3,9 @@ require('dotenv').config()
 import express, { Request, Response, NextFunction } from 'express';
 const app = express();
 app.use(express.json());
-import { db } from './models/index';
+import  sequelize  from './config/config';
 
-db.sequelize.sync({ alter: true })
+sequelize.sync({ alter: true })
 import userRoute from './routes/userRoute';
 app.listen(process.env.PORT, () => {
     console.log(`server is listening: ${process.env.BASE_URL}${process.env.PORT}`);
@@ -50,5 +50,15 @@ app.listen(process.env.PORT, () => {
 // };
 
 // app.get('/timezones', getLocationsWithTimezones);
+// error handler
+app.use(function (err: object, req: Request, res: Response, next: any): any {
+    // set locals, only providing error in development
+    res.locals.message = err;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-app.use('/api', userRoute);
+    // render the error page
+    // res.status(err.status || 500);
+    // res.render('error');
+});
+
+app.use('/api', userRoute)
