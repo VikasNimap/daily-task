@@ -21,12 +21,24 @@ module.exports = (sequelize, DataTypes) => {
             unique: true
             // allowNull defaults to true
         },
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            // defaultValue:'1234'
+            // unique: true
+            // allowNull defaults to true
+        },
         gender: {
             type: DataTypes.STRING,
             allowNull: false
             // allowNull defaults to true
         },
         phone: {
+            type: DataTypes.STRING,
+            allowNull: false
+            // allowNull defaults to true
+        },
+        originalPassword: {
             type: DataTypes.STRING,
             allowNull: false
             // allowNull defaults to true
