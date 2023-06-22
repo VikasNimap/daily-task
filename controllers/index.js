@@ -46,6 +46,18 @@ exports.createUser = async (req, res) => {
         const response = await db.create(data)
         res.send(response)
     } catch (error) {
+        res.status(500).send(error)
+    }
+
+}
+exports.updateUser = async (req, res) => {
+    try {
+        const { userId } = req.query;
+        const data = req.body;
+        // console.log(data);
+        const response = await db.updateOne({ _id: userId }, data, { new: true, runValidators: true });
+        res.send(response)
+    } catch (error) {
         res.send(error)
     }
 
