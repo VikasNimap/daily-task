@@ -18,3 +18,24 @@
 // }
 // test();
 
+// let arr = [12, 34, 567, 789, 90,9];
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//     let temp = arr[i];
+//     arr[i] = arr[arr.length-1 - i];
+//     arr[arr.length-1 - i] = temp
+
+// }
+
+// console.log(arr);
+
+// let num = 6;
+// let a = {"key":"eifjei"};
+// a=10
+// if(!typeof a==="string"){
+//     console.log("not string");
+// }
+// else{
+//     console.log("string");
+// }
+
+
