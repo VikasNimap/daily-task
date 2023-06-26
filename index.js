@@ -109,13 +109,14 @@
 // test()
 
 
-function* test() {
-    yield 1;
-    yield 3;
-    yield 5;
-}
-const a = test()
-console.log(a.next());
-console.log(a.next());
-console.log(a.next());
-console.log(a.next());
+// function* test() {
+//     yield 1;
+//     yield 3;
+//     yield 5;
+// }
+// const a = test()
+// console.log(a.next());
+// console.log(a.next());
+// console.log(a.next());
+// console.log(a.next());
+
