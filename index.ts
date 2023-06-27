@@ -118,6 +118,53 @@
 // console.log(quantity);
 
 
-type Quantity = 40 | 50;
-let quantity: Quantity = 40;
+// type Quantity = 40 | 50;
+// let quantity: Quantity = 40;
+// console.log(quantity);
 
+// getName()
+// function getName() {
+//     console.log('Namaste JavaScript');
+// }
+
+// let x = 6;
+// let x = 4;
+// a();
+// b();
+// console.log(x);
+
+// function a() {
+//     let x = 40;
+//     console.log('Inside a', x);
+// }
+// function b() {
+//     let x = 50;
+//     console.log('Inside b', x);
+// }
+
+// var a = 20;
+// console.log(this.a);
+
+// let a;
+// a = 4;
+// console.log(a);
+// function double(x: number) {
+//     return x * 2
+// }
+// let arr = [12, 34, 1, 2, 3];
+// let res = arr.map(double);
+// console.log(res);
+
+// let arr = [12, 34, 1, 2, 3];
+// let res = arr.map((ele) => ele.toString(2));
+// console.log(res);
+
+// let arr = [12, 34, 5, 3, 4, 2];
+// let res = arr.filter((ele) => ele % 4 == 0);
+// console.log(res);
+
+let arr = [12, 34, 5, 3, 4, 2];
+let res = arr.reduce((acc, curr) => {
+    return acc *= curr
+})
+console.log(res);
