@@ -84,8 +84,18 @@
 //     }
 // }
 // console.log(calculateTax(2323, 2019));
-type person = { name?: string, email?: string, contact?: string }
-let details: person = {};
-details.name = 'Vikas';
-details.email = 'vikas@gmail.com';
-console.log(details.contact);
+// type person = { id: number, name?: string, email?: string, contact?: string }
+// let details: person = { id: 1 };
+// details.name = 'Vikas';
+// details.email = 'vikas@gmail.com';
+// details.contact = '2382832323';
+// console.log(details.contact);
+
+// let sales: number = 12_34_56_789;
+
+// let numbers: number[] = [12, 34, 56, 78];
+// console.log(numbers);
+
+// let user: [object, string, string, string, string] = [{ id: 181, name: 'vikas' }, 'Vikas', 'vikas@gmail.com', 'Vikas@123', '8988988989'];
+// console.log(user);
+
