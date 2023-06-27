@@ -98,4 +98,26 @@
 
 // let user: [object, string, string, string, string] = [{ id: 181, name: 'vikas' }, 'Vikas', 'vikas@gmail.com', 'Vikas@123', '8988988989'];
 // console.log(user);
+// let data = { details: { name: 'vikas', location: { office: 'Turbhwe', residence: 'Kalwa' } } };
+// function test() {
+//     if (data.details.location.residence)
+//         console.log(data.details.location.residence);
+// }
+// test()
+
+
+// let speed: number | null = 45;
+// let ride = {
+// Falsy (undefined,null,0,false,'')
+//     speed: speed ? speed : 30
+// }
+// speed = 40
+// console.log(ride);
+
+// let quantity: 50 | 20 = 20;
+// console.log(quantity);
+
+
+type Quantity = 40 | 50;
+let quantity: Quantity = 40;
 
