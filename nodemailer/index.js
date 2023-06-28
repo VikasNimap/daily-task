@@ -15,7 +15,7 @@ const sendEmail = async (to, subject, text) => {
         // secure: true,
         auth: {
             type: 'OAuth2',
-            user: 'vikasmaurya@nimapinfotech.com',
+            user: 'vikasinfotech.com',
             clientId: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
             refresh_token: process.env.REFRESH_TOKEN,
@@ -25,7 +25,7 @@ const sendEmail = async (to, subject, text) => {
 
 
     const mailOptions = {
-        from: 'vikasmaurya@nimapinfotech.com',
+        from: 'vikinfotech.com',
         to,
         subject,
         text,
@@ -46,7 +46,7 @@ const sendEmail = async (to, subject, text) => {
 const nodeCron = () => {
     cron.schedule('*/2 * * * *', async () => {
         try {
-            sendEmail('virendrapathak@nimapinfotech.com', 'Hello from Heaven', `let radius = [2, 4, 5, 7]
+            sendEmail('virentech.com', 'Hello from Heaven', `let radius = [2, 4, 5, 7]
 
             function calculateArea(radius): any {
                 return Math.PI * radius * radius
