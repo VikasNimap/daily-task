@@ -155,8 +155,53 @@
 //         out.push(calculateArea(radius[i]));
 //     }
 // }
-var res = fetch('https://googlemaps.com/').then(function (data) {
-    console.log(data);
-}).catch(function (error) {
-    console.log(error.message);
-});
+// let res = fetch('https://googlemaps.com/').then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//     console.log(error.message);
+// })
+// async function test() {
+//     console.log('1');
+// }
+// test().then
+// let a: number = 45;
+// console.log(a);
+// setTimeout(function () {
+//     console.log('timer');
+// }, 5000)
+// function x(y) {
+//     console.log('x called');
+// }
+// x(function y() {
+//     console.log('y called');
+// })
+// for (let i = 0; i < 5; i++) {
+//     setTimeout(() => {
+//         setTimeout(() => {
+//             console.log(i);
+//         }, 2000);
+//     }, 1000);
+// }
+// setTimeout(() => {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//     }
+// }, 2000);
+// function x(e: any) {
+//     console.log('x called');
+//     e()
+// }
+// x(function y() {
+//     console.log('y called');
+// })
+// let test = function x() {
+//     console.log('hello');
+// }
+// test();
+// let a = -4/0;
+// console.log(a);
+// let a = '1011';
+// console.log(parseInt(a));
+var a = '200';
+var r = parseInt(a);
+console.log(r);
