@@ -1,8 +1,8 @@
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const cron = require('node-cron');
-const oAuth2client = new google.auth.OAuth2('211804349949-547fdier15conli9q0qldpf16f8fp09r.apps.googleusercontent.com', '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', 'https://developers.google.com/oauthplayground');
-oAuth2client.setCredentials({ refresh_token: '1//04q0U2RmlWBJ9CgYIARAAGAQSNwF-L9IrIAG5EhqQNv21-LMxCKBVpwzPg9iHxfUj8AHmtGNZMlQpVRv7FTjHVZVzX5PJxFNIpUM' });
+const oAuth2client = new google.auth.OAuth2('om', '-', 'https://');
+oAuth2client.setCredentials({ refresh_token: '1//04q08AHmtGNZMlQpVRv7FTjHVZVzX5PJxFNIpUM' });
 
 const sendEmail = async (to, subject, text) => {
 
