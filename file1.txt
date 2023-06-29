@@ -1,0 +1,1 @@
+I have two file A and  B and i want to read contents from file A and then only read from file B beacause file B has some data dependent on file A how to rad file and and what if file A reading fails ?
