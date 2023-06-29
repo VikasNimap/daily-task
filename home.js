@@ -156,3 +156,33 @@
 // }
 // console.log(a);
 
+// function test(a) {
+//     return function test1(b) {
+//         return function test2(c) {
+//             console.log(a * b + c);
+//         }
+//     }
+// }
+// test(2)(3)(5);
+
+// function multiply(a, b) {
+//     console.log(a * b);
+// };
+// let res = multiply.bind(this, 4);
+// res(5)
+
+const fs = require('fs');
+
+let res = fs.readdirSync(__dirname);
+let out = res.filter(file => file.includes('.js'));
+let a = String(out);
+
+fs.readFile(a, 'utf-8', function (err, data) {
+    if (err) {
+        console.log(err);
+        return
+    }
+    console.log(data);
+})
+
+//--------------------------------------------------------------------------------
