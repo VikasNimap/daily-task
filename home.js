@@ -88,13 +88,13 @@
 // }
 // let z = test();
 // console.log(z());
-const fs = require('fs');
-const http = require('http');
-const server = http.createServer();
+// const fs = require('fs');
+// const http = require('http');
+// const server = http.createServer();
 
-server.listen(3000, '127.0.0.1', function () {
-    console.log('server started.');
-})
+// server.listen(3000, '127.0.0.1', function () {
+//     console.log('server started.');
+// })
 
 // server.on('request', function (req, res) {
 //     fs.readFile('./file.xt', 'utf-8', function (err, data) {
@@ -120,9 +120,39 @@ server.listen(3000, '127.0.0.1', function () {
 // let multiply = x.bind(this,2);
 // multiply(3)
 
-server.on('request', function (req, res) {
-    let rs = fs.createReadStream('./file.txt');
-    // rs.on('data', function (chunk) {
-        rs.pipe('./x.txt')
-    // })
-})
+// server.on('request', function (req, res) {
+//     let rs = fs.createReadStream('./file.txt');
+//     // rs.on('data', function (chunk) {
+//         rs.pipe('./x.txt',)
+//     // })
+// })
+
+
+// const fs = require('fs');
+
+// console.log('Program started');
+
+// fs.readFile('./file1.txt', 'utf-8', function (err, data) {
+//     if (err) {
+//         console.log('Error', err);
+//         return
+//     }
+//     console.log(data);
+// })
+// setTimeout(() => {
+//     console.log('Inside Timeout');
+// }, 100);
+
+// setImmediate(() => {
+//     console.log("Inside setImmediate");
+// });
+
+// console.log('Program finished');
+
+// {
+//     var a = 100;
+//     console.log(a);
+//     var a = 40;
+// }
+// console.log(a);
+
