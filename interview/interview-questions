@@ -4,13 +4,13 @@ import { EventEmitter } from 'events';
 const eventEmitter = new EventEmitter();
 
 eventEmitter.on('myEvent', (data) => {
-    console.log(data, '- FIRST');
+  console.log(data, '- FIRST');
 });
 
 console.log('Statement A');
 
 eventEmitter.on("myEvent", data => {
-    console.log(data, '- SECOND');
+  console.log(data, '- SECOND');
 });
 
 eventEmitter.emit('myEvent', 'Emitted Statement');
@@ -19,12 +19,12 @@ console.log("Statement B");
 
 
 for (var i = 0; i < 5; i++) {
-    function test(i){
-        setTimeout(function () {
-          console.log(i);
-        }, i);
-    }
-    test(i)
+  function test(i) {
+    setTimeout(function () {
+      console.log(i);
+    }, i);
+  }
+  test(i)
 }
 
 
@@ -33,12 +33,12 @@ for (var i = 0; i < 5; i++) {
 
 import fs from 'fs-promise'
 
-async function printFiles () {
-  const files = await getFilePaths() // Assume this works fine
+async function printFiles() {
+  const files = [''] // Assume this works fine
 
   files.forEach(async (file) => {
     const contents = await fs.readFile(file, 'utf8')
-    console.log(contents)
+    console.log(contents);
   })
 }
 
@@ -58,17 +58,17 @@ for (var i = 0; i < 5; i++) {
 
 for (var i = 0; i < 5; i++) {
 
-    function test(i){
+  function test(i) {
 
-        setTimeout(function () {
+    setTimeout(function () {
 
-          console.log(i);
+      console.log(i);
 
-        }, i);
+    }, i);
 
-    }
+  }
 
-    test(i)
+  test(i)
 
 }
 
@@ -79,13 +79,13 @@ import { EventEmitter } from 'events';
 const eventEmitter = new EventEmitter();
 
 eventEmitter.on('myEvent', (data) => {
-    console.log(data, '- FIRST');
+  console.log(data, '- FIRST');
 });
 
 console.log('Statement A');
 
 eventEmitter.on("myEvent", data => {
-    console.log(data, '- SECOND');
+  console.log(data, '- SECOND');
 });
 
 eventEmitter.emit('myEvent', 'Emitted Statement');

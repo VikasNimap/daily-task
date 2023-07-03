@@ -33,5 +33,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     }   else if(arr[i]>min && )
 // }
 // console.log(min);
-var home_1 = require("./home");
-(0, home_1.getMessage)();
+// var home_1 = require("./home");
+// (0, home_1.getMessage)();
+
