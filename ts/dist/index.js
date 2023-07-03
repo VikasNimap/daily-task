@@ -1,5 +1,6 @@
+"use strict";
 // console.log(1245);
-
+Object.defineProperty(exports, "__esModule", { value: true });
 // let str = 'Hello and welcome to Nimap Infotech solutions pvt. ltd.';
 // let res = str.split(" ");
 // let max1: any = 0;
@@ -13,7 +14,6 @@
 //     }
 // }
 // console.log(max2,max1);
-
 // let str = 'Hello and welcome to Nimap Infotech solutions pvt. ltd.';
 // let res = str.split(" ");
 // let max: any = 0;
@@ -24,7 +24,6 @@
 //     }
 // }
 // console.log(max);
-
 // let arr = [2, 12, 34, 45, 34, 1];
 // let min = arr[0];
 // let min1 = 0;
@@ -34,27 +33,5 @@
 //     }   else if(arr[i]>min && )
 // }
 // console.log(min);
-
-
-// import {getMessage} from './home';
-// getMessage()
-
-// function x(y: Function) {
-//     y();
-//     console.log('x called');
-// }
-
-// x(function y() {
-//     setTimeout(() => {
-//         console.log('y called');
-//     }, 1000);
-// })
-
-// console.log(module.exports);
-
-// setTimeout(() => {
-//     console.log('Inside timers');
-// }, 3000);
-
-// const fs = require('fs');
-// fs.readFile()
+const home_1 = require("./home");
+(0, home_1.getMessage)();

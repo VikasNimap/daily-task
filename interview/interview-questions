@@ -1,0 +1,97 @@
+// console.log(123);
+
+import { EventEmitter } from 'events';
+const eventEmitter = new EventEmitter();
+
+eventEmitter.on('myEvent', (data) => {
+    console.log(data, '- FIRST');
+});
+
+console.log('Statement A');
+
+eventEmitter.on("myEvent", data => {
+    console.log(data, '- SECOND');
+});
+
+eventEmitter.emit('myEvent', 'Emitted Statement');
+
+console.log("Statement B");
+
+
+for (var i = 0; i < 5; i++) {
+    function test(i){
+        setTimeout(function () {
+          console.log(i);
+        }, i);
+    }
+    test(i)
+}
+
+
+
+// [3:41 PM] Jaiprakash Prasad
+
+import fs from 'fs-promise'
+
+async function printFiles () {
+  const files = await getFilePaths() // Assume this works fine
+
+  files.forEach(async (file) => {
+    const contents = await fs.readFile(file, 'utf8')
+    console.log(contents)
+  })
+}
+
+printFiles()
+
+// [3:44 PM] Jaiprakash Prasad
+
+for (var i = 0; i < 5; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, i);
+}
+
+
+
+// [3:45 PM] Vikas (Guest)
+
+for (var i = 0; i < 5; i++) {
+
+    function test(i){
+
+        setTimeout(function () {
+
+          console.log(i);
+
+        }, i);
+
+    }
+
+    test(i)
+
+}
+
+
+// [3:36 PM] Jaiprakash Prasad
+
+import { EventEmitter } from 'events';
+const eventEmitter = new EventEmitter();
+
+eventEmitter.on('myEvent', (data) => {
+    console.log(data, '- FIRST');
+});
+
+console.log('Statement A');
+
+eventEmitter.on("myEvent", data => {
+    console.log(data, '- SECOND');
+});
+
+eventEmitter.emit('myEvent', 'Emitted Statement');
+
+console.log("Statement B");
+
+
+// module.json
+
