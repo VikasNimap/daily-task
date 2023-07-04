@@ -91,12 +91,46 @@
 
 
 
+// function isPrime (num){
+//     if (num === 1 || num === 0) return false;
+//     for(i = 2; i < num; i++){
+//         if(num % i === 0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// for(i = 2; i < 100; i++){
+//     if(isPrime(i)){
+//         console.log(i)
+//     }
+// }
 
 
 
 
 
+let num = 3;
+while (num <= 3) { 
+    
+}
 
-
-
-
+// }
+// let count = 0;
+// let n = 0;
+// for (let i = 2; i < Infinity; i++) {
+//     count = 0;
+//     for (let j = 2; j <= i; j++) {
+//         if (i % j == 0) {
+//             count++
+//         }
+//     }
+//     if (count == 1) {
+//         console.log(i);
+//         ++n
+//     }
+//     if (n === 3) {
+//         break
+//     }
+// }
