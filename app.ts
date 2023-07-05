@@ -3,16 +3,22 @@
 
 import express, { Application, Request, Response, NextFunction } from 'express';
 const app: Application = express();
-
-function add(a: number, b: number): number {
-    return a + b
+import dotenv, { config } from 'dotenv'
+dotenv.config()
+import { client } from './models/user';
+// db.sequelize.sync()
+async function connection() {
+    await client.connect().then(function () {
+        console.log('connected to database');
+    }).catch(function (error) {
+        console.log(error.message);
+    });
 }
-
+connection()
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
-    let resp = add(5, 4)
-    res.send({message:'hello'});
-})
 
+    res.send({ message: 'hello' });
+})
 app.listen(3000, '127.0.0.1', function () {
     console.log('Server is running.');
 })
