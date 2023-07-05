@@ -6,6 +6,7 @@ const app: Application = express();
 import dotenv, { config } from 'dotenv'
 dotenv.config()
 import { client } from './models/user';
+import router from 'routes/user';
 // db.sequelize.sync()
 async function connection() {
     await client.connect().then(function () {
@@ -15,10 +16,8 @@ async function connection() {
     });
 }
 connection()
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-
-    res.send({ message: 'hello' });
-})
+app.use(express.json());
+app.use('/api', router)
 app.listen(3000, '127.0.0.1', function () {
     console.log('Server is running.');
 })
