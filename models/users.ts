@@ -58,7 +58,7 @@ User.init({
         allowNull: false,
     },
 }, {
-    modelName: 'User',
+    modelName: 'user',
     sequelize: new Sequelize
 })
 // }

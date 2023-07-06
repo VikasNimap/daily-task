@@ -6,7 +6,7 @@ const app: Application = express();
 import dotenv, { config } from 'dotenv'
 dotenv.config()
 import { client } from './models/user';
-import router from 'routes/user';
+import router from './routes/user';
 // db.sequelize.sync()
 async function connection() {
     await client.connect().then(function () {
