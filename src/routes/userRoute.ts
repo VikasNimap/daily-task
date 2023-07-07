@@ -1,10 +1,10 @@
 import express from 'express';
-import { createUser, getUser, updateUser, deleteUser } from '../controller/userController';
+import { UserCrud } from '../controller/userController';
 const app = express.Router();
-
-app.post('/users', createUser);
-app.get('/users', getUser);
-app.put('/users/:id', updateUser);
-app.delete('/users/:id', deleteUser);
+const user = new UserCrud();
+app.post('/users', user.createUser);
+app.get('/users', user.getUser);
+app.put('/users/:id', user.updateUser);
+app.delete('/users/:id', user.deleteUser);
 
 export default app;
