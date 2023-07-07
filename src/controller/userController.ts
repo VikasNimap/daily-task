@@ -1,8 +1,11 @@
 import { User } from '../models/user.entity';
 import { AppDataSource } from '../app';
 import { Request, Response } from 'express';
+import bcrypt from 'bcrypt';
+
 export async function createUser(req: Request, res: Response) {
-    console.log(req.body);
+    // const salt: string = await bcrypt.genSalt(10);
+    req.body.password = await bcrypt.hashSync(req.body.password, 10);
     const user = AppDataSource.getRepository(User).create(req.body);
     let result = await AppDataSource.getRepository(User).save(user);
     res.status(201).send(result)
