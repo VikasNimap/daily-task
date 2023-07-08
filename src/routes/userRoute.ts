@@ -1,0 +1,11 @@
+import express from 'express';
+import { UserCrud } from '../controller/userController';
+import passport from 'passport';
+const app = express.Router();
+const user = new UserCrud();
+app.post('/users', user.createUser);
+app.get('/users', passport.authenticate('jwt', { session: false }), user.getUser);
+app.put('/users/:id', user.updateUser);
+app.delete('/users/:id', user.deleteUser);
+app.post('/login', user.login);
+export default app;
