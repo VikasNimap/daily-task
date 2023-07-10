@@ -150,3 +150,131 @@
 //     }
 // }
 
+// let data = ["tan", "ant", "nat", "bat", "act", "cat", "tac"];
+
+// let query = {};
+// for (let i = 0; i < data.length; i++) {
+//     let word = data[i].split("").sort().join("");
+//     if (query[word]) {
+//         query[word].push(data[i])
+//     }
+//     else {
+//         query[word] = [];
+//         query[word].push(data[i])
+//     }
+// }
+// console.log(Object.values(query));
+
+// let str = "Engineer";
+// let word = str.toLowerCase();
+// let query = {};
+// for (let i = 0; i < word.length; i++) {
+//     if (query[word[i]]) {
+//         query[word[i]]++
+//     } else {
+//         query[word[i]] = 1
+//     }
+// }
+// let res = "";
+// for (let k in query) {
+//     res += k + query[k]
+// }
+// console.log(res);
+
+
+// class List {
+//     constructor(data, next) {
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// class LinkedList {
+//     constructor(data, next) {
+//         this.head = null;
+//         this.tail = null;
+//     }
+//     insertAtBeginning(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list;
+//             this.tail = list;
+//         } else {
+//             list.next = this.head;
+//             this.head = list
+//         }
+//     }
+//     insertAtEnd(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list;
+//             this.tail = list;
+//         } else {
+//             this.tail.next = list;
+//             this.tail = list;
+//         }
+//     }
+//     print(data) {
+//         for (let i = this.head; i != null; i = i.next) {
+//             console.log(i.data);
+//         }
+//     }
+// }
+
+// const node = new LinkedList();
+// node.insertAtEnd(5);
+// node.insertAtBeginning(9);
+// node.insertAtEnd(8);
+// node.print()
+
+
+// class List {
+//     constructor(data, next) {
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// class LinkedList {
+//     constructor(data, next) {
+//         this.head = null;
+//         this.tail = null;
+//     }
+//     insertAtBeginning(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list;
+//             this.tail = list;
+//         } else {
+//             list.next = this.head;
+//             this.head = list
+//         }
+//     }
+//     insertAtEnd(data) {
+//         const list = new List();
+//         list.data = data;
+//         if (!this.head) {
+//             this.head = list;
+//             this.tail = list;
+//         }
+//         else {
+//             list.tail.next = list;
+//             this.tail = list
+
+//         }
+//     }
+//     print(data) {
+//         for (let i = this.head; i != null; i = i.next) {
+//             console.log(i.data);
+//         }
+//     }
+// }
+
+// const node = new LinkedList();
+// node.insertAtEnd(5);
+// node.insertAtBeginning(2);
+// node.print();
+
