@@ -162,3 +162,69 @@
 // console.log(arr);
 
 
+// let arr = [12, 34, 56, 78, 90, 12, 34];
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] > arr[j]) {
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//             console.log(arr[i]);
+//             console.log(arr[j]);
+//         }
+//     }
+// }
+
+
+
+// let s2 = 'Hello and welcome to the world';
+// let s1 = 'to the world Hello and welcome';
+
+// let s1 = str1.replace(/\s/g, "");
+// let s2 = str2.replace(/\s/g, "");
+// let s11 = [];
+// let s12 = [];
+
+// // console.log(s1);
+// for (let i = 0; i < s1.length; i++) {
+//     s11[i] = s1[i];
+
+// }
+// for (let i = 0; i < s2.length; i++) {
+//     s12[i] = s2[i];
+// }
+// for (let i = 0; i < s11.length; i++) {
+//     for (let j = i + 1; j < s11.length; j++) {
+//         if (s11[i] > s11[j]) {
+//             let temp = s11[i];
+//             s11[i] = s11[j];
+//             s11[j] = temp;
+//         }
+//     }
+// }
+// for (let i = 0; i < s12.length; i++) {
+//     for (let j = i + 1; j < s12.length; j++) {
+//         if (s12[i] > s12[j]) {
+//             let temp = s12[i];
+//             s12[i] = s12[j];
+//             s12[j] = temp;
+//         }
+//     }
+// }
+// let t1 = s11.toString();
+// let t2 = s12.toString();
+// console.log(t1===t2);
+
+
+
+// let arr = [12, 34, 56, 78, 90, 12, 34];
+let arr = ['vikas', 'vishal', 'akash', 'virendra'];
+
+function reverseArray(curr, next, index) {
+    console.log(curr, next, index);
+}
+
+for (let i = 0; i < arr.length - 1; i++) {
+    reverseArray(arr[i], arr[i + 1], i)
+}
+
