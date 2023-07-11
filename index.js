@@ -218,13 +218,94 @@
 
 
 // let arr = [12, 34, 56, 78, 90, 12, 34];
-let arr = ['vikas', 'vishal', 'akash', 'virendra'];
+// let arr = ['vikas', 'vishal', 'akash', 'virendra'];
 
-function reverseArray(curr, next, index) {
-    console.log(curr, next, index);
+// function reverseArray(data, start, end) {
+//     if (start <= end) {
+//         let temp = data[start];
+//         data[start] = data[end];
+//         data[end] = temp;
+//         reverseArray(data, start + 1, end - 1)
+//     }
+// }
+// reverseArray(arr, 0, arr.length - 1);
+// console.log(arr);
+
+// let arr = ['1234', '5678', '9101112', '13141516'];
+// function reverse(data, start, end) {
+//     if (start <= end) {
+//         let temp = data[start];
+//         data[start] = data[end];
+//         data[end] = temp;
+//         reverse(data, start + 1, end - 1);
+//     }
+// }
+
+// reverse(arr, 0, arr.length-1);
+// console.log(arr);
+
+// let arr = ['1234', '5678', '9101112', '13141516'];
+// arr.pop()
+// console.log(arr);
+// let arr = ['1234', '5678', '9101112', '13141516'];
+
+// console.log(+"12");
+
+// console.log(!!1);
+
+// let data = 'small';
+// let bird = {
+//     size: 'small'
+// }
+// console.warn(bird[data]);
+// console.warn(bird['size']);
+// console.warn(bird.size);
+// console.warn(bird.data);
+
+
+// let c = {
+//     name: 'peter'
+// }
+
+// let d;
+// d = c
+// c.name = 'michael';
+// console.log(d.name);
+
+// let a = 3;
+// let b = new Number(3);
+// console.log(a==b);
+// console.log(a===b);
+// console.log(typeof b);
+
+// function fruit() {
+//     console.log('woof!');
+// }
+
+// fruit.name = 'mango';
+// console.log(fruit());
+
+// function test() {
+//     'use strict';
+//     age = 23;
+//     console.log(age);
+// }
+
+// test()
+
+
+// sessionStorage.setItem('secret', 123);
+
+// let obj = { message: 'hello', 1: 3, 4: 5 };
+// console.log(obj.hasOwnProperty("message"));
+// console.log(obj.hasOwnProperty(1));
+
+// let obj = { a: 5, b: 7, a: 2 };
+// console.log(obj);
+
+function test() {
+    age = 23;
+    return age;
 }
 
-for (let i = 0; i < arr.length - 1; i++) {
-    reverseArray(arr[i], arr[i + 1], i)
-}
-
+console.log(test.bind()())
