@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize-typescript';
-
+import { User } from '../model/user';
 class DataBase {
     public sequelize: Sequelize | undefined;
 
@@ -21,7 +21,8 @@ class DataBase {
             password: this.POSTGRES_PASSWORD,
             host: this.POSTGRES_HOST,
             port: this.POSTGRES_PORT,
-            dialect: 'postgres'
+            dialect: 'postgres',
+            models: [User]
         })
 
         await this.sequelize

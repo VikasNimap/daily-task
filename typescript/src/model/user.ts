@@ -19,4 +19,25 @@ export class User extends Model {
         field: User.TABLE_ID
     })
     id!: number
+
+    @Column({
+        type: DataType.STRING,
+        allowNull: false,
+        field: User.TABLE_NAME
+    })
+    name!: string
+
+    @Column({
+        type: DataType.STRING,
+        allowNull: false,
+        field: User.TABLE_EMAIL
+    })
+    email!: string
+
+    @Column({
+        type: DataType.STRING,
+        allowNull: false,
+        field: User.TABLE_PASSWORD
+    })
+    password!: string
 }
